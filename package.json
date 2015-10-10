@@ -2,12 +2,9 @@
   "name": "react-postcss",
   "version": "0.0.2",
   "description": "React styling inside the component",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "directories": {
     "test": "test"
-  },
-  "scripts": {
-    "build": "./node_modules/.bin/browserify -t [babelify] src/index.js > dist/index.js"
   },
   "author": "Shmavon Gazanchyan <sgazanchyan@gmail.com>",
   "license": "MIT",
