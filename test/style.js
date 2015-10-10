@@ -5,8 +5,9 @@ import Style from '../'
 
 test('Component: Style', function (it) {
 
-    console.log(utils.createComponent(Style));
+    let component = utils.createComponent(Style, {}, "a{}");
 
-    it.ok(utils.createComponent(Style, null, 'Hellow'));
+    it.ok(component.type, null, 'style');
 
+    it.end()
 });

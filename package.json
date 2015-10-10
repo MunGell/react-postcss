@@ -6,6 +6,9 @@
   "directories": {
     "test": "test"
   },
+  "scripts": {
+    "test": "./node_modules/.bin/babel-node test/*.js"
+  },
   "author": "Shmavon Gazanchyan <sgazanchyan@gmail.com>",
   "license": "MIT",
   "devDependencies": {

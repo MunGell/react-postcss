@@ -1,14 +1,14 @@
 import React from 'react';
-import TestUtils from 'react-addons-test-utils';
-
-const renderer = TestUtils.createRenderer();
+import ReactTestUtils from 'react-addons-test-utils';
 
 export default {
 
-    createComponent: function (Component, props, ...children) {
-        return renderer.render(
-            React.createElement(Component, props, children.length === 1 ? children[0] : children)
-        ).getRenderOutput();
+    createComponent: function (component, props, ...children) {
+        let renderer = ReactTestUtils.createRenderer();
+        renderer.render(
+            React.createElement(component, props, children.length === 1 ? children[0] : children)
+        );
+        return renderer.getRenderOutput();
     }
 
 }
