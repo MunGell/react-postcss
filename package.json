@@ -1,25 +1,29 @@
 {
   "name": "react-postcss",
   "version": "0.0.4",
-  "description": "React styling inside the component",
+  "description": "CSS styles for React components using PostCSS",
+  "author": "Shmavon Gazanchyan <sgazanchyan@gmail.com>",
+  "license": "MIT",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MunGell/react-postcss.git"
+  },
   "directories": {
     "test": "test"
   },
-  "scripts": {
-    "test": "./node_modules/.bin/babel-node test/*.js"
+  "dependencies": {
+    "postcss": "^5.0.9",
+    "postcss-use": "^2.0.0",
+    "react": "^0.14.0"
   },
-  "author": "Shmavon Gazanchyan <sgazanchyan@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
     "babel": "^5.8.23",
     "postcss-nested": "^1.0.0",
     "react-addons-test-utils": "^0.14.0",
     "tape": "^4.2.1"
   },
-  "dependencies": {
-    "postcss": "^5.0.9",
-    "postcss-use": "^2.0.0",
-    "react": "^0.14.0"
+  "scripts": {
+    "test": "./node_modules/.bin/babel-node test/*.js"
   }
 }

@@ -1,5 +1,7 @@
 # react-postcss
 
+[![Build Status](https://travis-ci.org/MunGell/react-postcss.svg)](https://travis-ci.org/MunGell/react-postcss)
+
 This repository contains proof-of-concept simple style tag component for React.
 
 ## How to use
