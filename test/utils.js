@@ -9,6 +9,10 @@ export default {
             React.createElement(component, props, children.length === 1 ? children[0] : children)
         );
         return renderer.getRenderOutput();
+    },
+
+    stringCondense: function(str) {
+        return str.replace(/\s|\n|\r/g, '');
     }
 
 }

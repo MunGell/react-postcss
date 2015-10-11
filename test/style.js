@@ -3,11 +3,39 @@ import utils from './utils.js';
 
 import Style from '../'
 
-test('Component: Style', function (it) {
+test('Plain CSS', function (it) {
 
-    let component = utils.createComponent(Style, {}, "a{}");
+    let css = `
+        a {
+            color: red;
+        }
+    `;
+    let component = utils.createComponent(Style, {}, css);
 
-    it.ok(component.type, null, 'style');
+    it.equal(component.type, 'style', 'renders style tag');
+    it.equal(utils.stringCondense(component.props.children), utils.stringCondense(css), 'renders css code');
+
+    it.end()
+});
+
+test('Nested CSS', function (it) {
+
+    let nested = `
+        @use postcss-nested;
+        .container {
+            a {
+                    color: red;
+            }
+        }
+    `;
+    let css = `
+        .container a {
+            color: red;
+        }
+    `;
+    let component = utils.createComponent(Style, {}, nested);
+
+    it.equal(utils.stringCondense(component.props.children), utils.stringCondense(css), 'renders nested css');
 
     it.end()
 });

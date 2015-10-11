@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "postcss": "^5.0.9",
+    "postcss-use": "^2.0.0",
     "react": "^0.14.0"
   }
 }
