@@ -5,10 +5,17 @@
   "author": "Shmavon Gazanchyan <sgazanchyan@gmail.com>",
   "license": "MIT",
   "main": "lib/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/MunGell/react-postcss.git"
+  "repository": "MunGell/react-postcss",
+  "engines": {
+    "node": ">=0.12"
   },
+  "keywords": [
+    "css",
+    "postcss",
+    "react",
+    "component",
+    "style"
+  ],
   "directories": {
     "test": "test"
   },
