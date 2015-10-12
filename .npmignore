@@ -2,3 +2,4 @@ test
 gulpfile.js
 npm-debug.log
 package.json
+.travis.yml
