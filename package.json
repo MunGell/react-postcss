@@ -32,7 +32,6 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/babel-node test/*.js",
-    "prepublish": "./node_modules/.bin/babel src/index.js > index.js",
-    "preversion": "./node_modules/.bin/babel src/index.js > index.js"
+    "prepublish": "./node_modules/.bin/babel src/index.js > index.js"
   }
 }
