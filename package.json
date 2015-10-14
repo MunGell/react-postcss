@@ -1,10 +1,10 @@
 {
   "name": "react-postcss",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "CSS styles for React components using PostCSS",
   "author": "Shmavon Gazanchyan <sgazanchyan@gmail.com>",
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "index.js",
   "repository": "MunGell/react-postcss",
   "engines": {
     "node": ">=0.12"
@@ -32,6 +32,6 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/babel-node test/*.js",
-    "prepublish": "./node_modules/.bin/babel src/index.js > lib/index.js"
+    "prepublish": "./node_modules/.bin/babel src/index.js > index.js"
   }
 }
