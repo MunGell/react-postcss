@@ -31,6 +31,7 @@
     "tape": "^4.2.1"
   },
   "scripts": {
-    "test": "./node_modules/.bin/babel-node test/*.js"
+    "test": "./node_modules/.bin/babel-node test/*.js",
+    "prepublish": "./node_modules/.bin/babel src/index.js > lib/index.js"
   }
 }
