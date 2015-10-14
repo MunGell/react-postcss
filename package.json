@@ -1,6 +1,6 @@
 {
   "name": "react-postcss",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "CSS styles for React components using PostCSS",
   "author": "Shmavon Gazanchyan <sgazanchyan@gmail.com>",
   "license": "MIT",
