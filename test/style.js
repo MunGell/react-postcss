@@ -1,5 +1,7 @@
-import { test } from 'tape';
-import utils from './utils.js';
+import { test } from 'tape'
+import utils from './utils.js'
+
+import postcssNested from 'postcss-nested'
 
 import Style from '../'
 
@@ -21,7 +23,6 @@ test('Plain CSS', function (it) {
 test('Nested CSS', function (it) {
 
     let nested = `
-        @use postcss-nested;
         .container {
             a {
                     color: red;
@@ -33,7 +34,9 @@ test('Nested CSS', function (it) {
             color: red;
         }
     `;
-    let component = utils.createComponent(Style, {}, nested);
+    let component = utils.createComponent(Style, {
+        plugins: [ postcssNested ]
+    }, nested);
 
     it.equal(utils.stringCondense(component.props.children), utils.stringCondense(css), 'renders nested css');
 
